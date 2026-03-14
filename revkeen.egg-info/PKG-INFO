@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: revkeen
+Version: 1.20260314.49
+Summary: RevKeen Python SDK - Stripe-like billing infrastructure for your SaaS
+Author-email: RevKeen <support@revkeen.com>
+License: MIT
+Project-URL: Homepage, https://revkeen.com
+Project-URL: Documentation, https://api.revkeen.com/v2/docs
+Project-URL: Repository, https://github.com/revkeen/sdk-python
+Keywords: revkeen,billing,payments,subscriptions,invoices,saas,api,sdk
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: httpx>=0.21.0
+Requires-Dist: pydantic>=1.9.0
+Requires-Dist: typing_extensions>=4.0.0
+
+# RevKeen Python SDK
+
+Official Python SDK for the RevKeen API - Stripe-like billing infrastructure for your SaaS.
+
+## Installation
+
+```bash
+pip install revkeen
+```
+
+## Usage
+
+```python
+from revkeen import RevKeen
+
+client = RevKeen(api_key="rk_live_...")
+
+# List customers
+customers = client.customers.list()
+```
+
+## Documentation
+
+- [API Reference](https://api.revkeen.com/v2/docs)
+- [RevKeen Website](https://revkeen.com)
